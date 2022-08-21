@@ -1,0 +1,66 @@
+{
+	"name": "corgic_history",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@testing-library/jest-dom": "^4.2.4",
+		"@testing-library/react": "^9.3.2",
+		"@testing-library/user-event": "^7.1.2",
+		"axios": "^0.21.1",
+		"bootstrap": "^4.6.0",
+		"draft-js": "^0.11.4",
+		"draftjs-to-html": "^0.9.1",
+		"formik": "^2.1.1",
+		"html-to-draftjs": "^1.5.0",
+		"jsonwebtoken": "^8.5.1",
+		"moment": "^2.24.0",
+		"node-sass": "^4.14.1",
+		"query-string": "^6.9.0",
+		"react": "^16.14.0",
+		"react-confetti": "^6.0.1",
+		"react-dom": "^16.14.0",
+		"react-draft-wysiwyg": "^1.14.4",
+		"react-image-gallery": "^1.1.1",
+		"react-infinite-scroller": "^1.2.4",
+		"react-lazy-load-image-component": "^1.4.1",
+		"react-lazyload": "^2.6.5",
+		"react-map-interaction": "^2.0.0",
+		"react-router": "^5.1.2",
+		"react-router-dom": "^5.1.2",
+		"react-scripts": "^3.4.0",
+		"react-share": "^4.0.1",
+		"react-stripe-elements": "^6.1.0",
+		"react-tabs": "^3.2.2",
+		"react-tagsinput": "^3.19.0",
+		"react-textarea-autosize": "^7.1.2",
+		"react-toastify": "^5.5.0",
+		"react-top-loading-bar": "^1.2.0",
+		"react-use": "^17.3.1",
+		"reactstrap": "^8.9.0",
+		"semantic-ui-calendar-react": "^0.15.3",
+		"semantic-ui-react": "^0.88.2",
+		"socket.io-client": "^2.3.0",
+		"yup": "^0.28.0"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
+}
