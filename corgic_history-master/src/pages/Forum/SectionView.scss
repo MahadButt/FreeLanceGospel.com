@@ -1,0 +1,106 @@
+@import '../../shared/theme/app.scss';
+.section-view-container {
+	background: $light-color;
+	.section-view-inner-container {
+		height: 100%;
+		min-height: 100vh;
+		padding: 40px 50px 50px;
+		@include respond-at-max(1024px) {
+            padding: 40px 20px 50px;
+        }
+		@include respond-at-max(768px) {
+            padding: 40px 15px 50px;
+        }
+		.title-wrapper {
+	        text-align: center;
+	        .title {
+	            font-family: basker-bold;
+	            font-size: 24px;
+	            @include respond-at-max(480px) {
+	                font-size: 20px;
+	            }
+	        }
+	        .custom-border {
+	            border-bottom: 4px solid $orange-color;
+	            width: 140px;
+	            margin: 2px auto 0;
+	            @include respond-at-max(480px) {
+	                width: 120px;
+	            }
+	            
+	        }
+	    }
+	    .forum-topic {
+	        text-align: center;
+	        margin: 15px 0px 45px;
+	        font-family: basker-regular;
+	        font-size: 15px;
+	        @include respond-at-max(480px) {
+	            font-size: 15px;
+	        }
+	    }
+	    .forum-table-wrapper {
+	    	/*background: white;*/
+            /*border-radius: 5px;*/
+            -moz-box-shadow: 0px 0px 10px 2px #ccc;
+            -webkit-box-shadow: 0px 0px 10px 2px #ccc;
+            box-shadow: 0px 0px 10px 2px #ccc;
+            thead {
+            	background: $yellow-color;
+            	th {
+            		color: black;
+            		font-family: basker-bold;
+            		font-size: 15px;
+            		padding-top: 12px;
+            		padding-bottom: 12px;
+            	}
+            }
+            tbody {
+            	tr {
+
+            	}
+            	td {
+            		font-family: basker-regular;
+            		.title {
+            			a {
+            				text-decoration: none;
+            				color: black;
+            				font-size: 15px;
+            				transition: .7s;
+            				&:hover {
+            					font-size: 15.3px;
+            					color: $purple-color;
+            					text-decoration: underline;
+            				}
+            			}
+            		}
+					.actions-btns {
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						justify-content: center;
+						.action {
+							transition: .5s;
+							.icon {
+								margin: 0;
+								padding: 0;
+							}
+							&.delete {
+								margin-left: 5px;
+							}
+							&:hover {
+								cursor: pointer;
+								&.delete {
+									color: #d9534f;
+								}
+								&.edit {
+									color: $blue-color;
+								}
+							}
+						}
+					}
+            	}
+            }
+	    }
+    }
+}

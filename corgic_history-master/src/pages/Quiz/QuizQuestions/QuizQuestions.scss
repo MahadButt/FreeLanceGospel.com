@@ -1,0 +1,195 @@
+@import '../../../shared/theme/app.scss';
+
+.quiz-questions-page-container {
+    .quiz-questions-inner-container {
+        height: 100%;
+        min-height: 100vh;
+        padding: 80px 0 70px;
+        // background-image: url('../../../assets/quiz/The-Godpel-Logo-copy.jpg');
+        // background-repeat: no-repeat;
+        // background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.2)) , url('../../../assets/quiz/The-Godpel-Logo-.jpg');
+        // background-size: 100% 100%;
+        // background-size: cover;
+        background-color: $light-color;
+        .top-layer {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            width: 50%;
+            margin: 0 auto 30px;
+            @include respond-at-max(1024px) {
+                margin: 0 auto 80px;
+                justify-content: center;
+            }
+            @include respond-at-max(1024px) {
+                margin: 0 auto 65px;
+            }
+            .count-down {
+                font-family: basker-bold;
+                font-size: 24px;
+                .timer-label {
+                    font-family: basker-regular;
+                    font-size: 13px;
+                    color: gray;
+                }
+            }
+        }
+        .questions-wrapper {
+            position: relative;
+            width: 55%;
+            background-color: white;
+            padding: 80px 30px 15px;
+            margin: auto;
+            border-radius: 40px;
+            -moz-box-shadow: 0px 0px 5px 1px $purple-color;
+            -webkit-box-shadow: 0px 0px 5px 1px $purple-color;
+            box-shadow: 0px 0px 5px 1px $purple-color;
+            &.completed {
+                padding: 30px 30px;
+            }
+            @include respond-at-max(1024px) {
+                width: 90%;
+                padding: 100px 30px 15px;
+            }
+            @include respond-at-max(480px) {
+                width: 95%;
+                padding: 75px 30px 15px;
+            }
+            .question-number {
+                text-align: center;
+                margin-top: 35px;
+                font-family: basker-bold;
+                font-size: 14px;
+            }
+            .logo-wrapper {
+                position: absolute;
+                top: -60px;
+                left: 50%;
+                right: 50%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-bottom: 10px;
+                img {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                }
+            }
+            .question {
+                font-family: basker-regular;
+                font-size: 20px;
+                line-height: 32px;
+                text-align: center;
+                color: $navy-blue-color;
+            }
+            .choices-box {
+                margin: 25px 0 25px;
+                .choice-item {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    width: 60%;
+                    margin: 8px auto;
+                    padding: 8px 10px; 
+                    background: $yellow-color;
+                    border-radius: 20px; 
+                    transition: .5s;
+                    @include respond-at-max(1024px) {
+                        width: 80%;
+                    }
+                    @include respond-at-max(480px) {
+                        width: 85%;
+                    }
+                    .choice {
+                        font-family: basker-regular;
+                        /*font-size: 15px;*/
+                        text-transform: capitalize;
+                        text-align: center;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        background: $purple-color;
+                        color: white;
+                    }
+                    &.active {
+                        background: $purple-color; 
+                        .choice {
+                            font-family: basker-bold;
+                            color: white;
+                        }  
+                    }
+                }
+            }
+            .error {
+                font-family: basker-regular;
+                font-size: 13px;
+                color: red;
+                text-align: center;
+            }
+            .button-wrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-top: 10px;
+                button {
+                    border: none;
+                    height: 35px;
+                    width: 120px;
+                    border-radius: 5px;
+                    font-family: basker-bold;
+                    background: $purple-color;
+                    color: white;
+                    font-size: 14px;
+                    transition: width .3s ease;
+                    &:hover {
+                        width: 150px;
+                    }
+                }
+            }
+            .completed-wrapper {
+                .completed-title {
+                    font-family: basker-bold;
+                    font-size: 22px;
+                    text-align: center;
+                }
+                .completed-sub-title {
+                    font-family: basker-regular;
+                    // font-size: 16px;
+                    text-align: center;
+                    margin-top: 5px;
+                }
+                .quiz-banner {
+                    text-align: center;
+                    margin: 30px 0 40px;
+                    img {
+                        width: 35%;
+                    }
+                }
+                .submit-btn-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin-top: 10px;
+                    button {
+                        border: none;
+                        height: 35px;
+                        width: 120px;
+                        border-radius: 5px;
+                        font-family: basker-bold;
+                        background: $purple-color;
+                        color: white;
+                        font-size: 14px;
+                        transition: all .3s ease;
+                        &:hover {
+                            width: 150px;
+                            background: $yellow-color;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

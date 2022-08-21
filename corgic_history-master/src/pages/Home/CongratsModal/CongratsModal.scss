@@ -1,0 +1,104 @@
+@import '../../../shared/theme/app.scss';
+
+.congrats-member-modal-container {
+    .congrats-member-wrapper {
+		position: relative;
+		// background: $light-color;
+		padding: 20px 10px 20px;
+        .times-icon {
+            position: absolute;
+            top:0;
+            right: 0;
+            color: gray;
+            z-index: 1;
+            transition: .2s;
+            &:hover {
+                color: $yellow-color;
+                cursor: pointer;
+            }
+            .icon {
+                font-size: 22px;
+            }
+        }
+        .congrats-body-wrapper {
+            text-align: center;
+
+            .congrats-icon {
+                .trophy {
+                    width: 150px;
+                }
+            }
+            .congrats-title {
+                font-size: 24px;
+                font-family: basker-bold;
+            }
+            .congrats-text {
+                font-size: 14px;
+                font-family: basker-regular;
+                margin-top: 5px;
+            }
+            .congrats-buttons-wrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+                .congrats-btn {
+                    background: $yellow-color;
+                    padding: 5px 8px;
+                    font-family: basker-regular;                
+                    border-radius: 3px;
+                    &:hover {
+                        background-color: $purple-color;
+                        color: white;
+                        cursor: pointer;
+                    }
+                    &:nth-child(1) {
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .form-wrapper {
+                width: 85%;
+                margin: 15px auto 0;
+                .label {
+                    text-align: left;
+                    font-family: basker-regular;
+                    font-size: 12px;
+                    margin-bottom: 3px;
+                }
+                .congrat-field-item {
+                    textarea {
+                        width: 100%;
+                        resize: none;
+                        padding: 5px;
+                        border-radius: 4px;
+                        border: 1px solid lightgray;
+                        transition: .4s;
+                        &:focus {
+                            outline: none;
+                            border: 1px solid #2185d0;
+                        }
+                    }
+                }
+                .error {
+                    color: red;
+                    text-align: left;
+                }
+                .submit-button {
+                    background-color: $yellow-color;
+                    padding: 5px 14px;
+                    border-radius: 5px;
+                    font-family: basker-regular;
+                    margin-top: 5px;
+                    border: none;
+                    transition: .3s;
+                    &:hover {
+                        background-color: $purple-color;
+                        color: white
+                    }
+                }
+            }
+        }
+    }
+}

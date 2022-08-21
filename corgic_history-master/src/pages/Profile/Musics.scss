@@ -1,0 +1,193 @@
+@import '../../shared/theme/app.scss';
+.musics{
+    padding: 10px 20px;
+    @include respond-at-max(480px) {
+        padding: 10px 0;
+    }
+.addMusic{
+    display: flex;
+    justify-content: flex-start;
+    .addImage{
+        display: flex;
+        justify-content: center;
+        padding: 6px;
+        cursor: pointer;
+    }
+    .addText{
+        padding:6px;
+        align-self: center;
+        font-size: 12px;
+        b{
+            transition: .5s;
+            &:hover {
+                color: #23094a;
+                font-size: 14px;
+                border-bottom: 1px solid #23094a;
+                cursor: pointer;
+            }
+        }
+    }
+    .create-music-container{
+        .create-music-form {
+            margin-top: 20px;
+            .input-field {
+                margin-bottom: 20px;
+                .field-label {
+                    font-family: basker-bold;
+                }
+                .input-field-error {
+                    font-family: basker-italic;
+                }
+                textarea {
+                    width: 100% !important;
+                    border: 1px solid rgba(34,36,38,.15) !important;
+                    color: rgba(0,0,0,.87) !important;
+                    border-radius: .28571429rem !important;
+                    padding: .67857143em 1em !important;
+                    &:focus {
+                        outline: none;
+                        border: 1px solid lighten($blue-color, 20%) !important;
+                    }
+                }
+            }
+            .submit-btn {
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+                @include respond-at-min(481px) {
+                    float: right;    
+                }
+                .ui.button {
+                    background: $yellow-color;
+                    /*border-radius: 0;*/
+                    font-family: basker-bold;
+                    /*font-size: 15px;*/
+                    transition: .5s;
+                    width: 160px;
+                    &:hover {
+                        background: $purple-color;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .music-content-wrapper {
+        width: 100%;
+        padding:0;
+        @include respond-at-max(768px) {
+            width: 100%;
+        }
+        @include respond-at-max(768px) {
+            padding: 20px 2px 20px;
+            width: 100%;
+        }
+        .music-list-wrapper {
+                .music-title-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    @include respond-at-max(767px) {
+                        flex-direction: column;
+                        .title-wrapper {
+                            width: 100%;
+                            text-align: center;
+                            audio {
+                                width: 100%;
+                            }
+                        }                        
+                    }
+                    .title-wrapper {
+                    }
+                    .music-actions-btns {
+                        @include respond-at-max(767px) {
+                            margin-top: 3px;    
+                            .add-friend {
+                                font-size: 10px;
+                            }                  
+                        }
+                    }
+                }
+                    .music-item {
+                        border: 1px solid $orange-color;
+                        padding: 10px 15px;
+                        margin:15px 0;
+                        border-radius: 20px;
+                        @include respond-at-max(480px) {
+                            padding: 10px 5px;
+                        }
+                        .music-title,.music-description {
+                                overflow: hidden;
+                                text-decoration: none;
+                                color: black;
+                                font-family: basker-regular;
+                                font-size: 13px;
+                                transition: all .3s ease;
+                        }
+                        .play-icon-wrap {
+                            cursor: pointer;
+                            font-size: 22px;
+                            transition: .5s;
+                            &:hover {
+                                color: $purple-color;
+                            }
+                            // .play-icon {
+                                
+                            // }
+                        }
+                        .add-friend{
+                            font-size: 14px;
+                            justify-content: center;
+                            background: $yellow-color;
+                            color: black;
+                            transition: all .5s ease;
+                            border-top-left-radius: 50%;
+                            border-bottom-left-radius: 50%;
+                            border-top-right-radius: 50%;
+                            border-bottom-right-radius: 50%;
+                        }
+                        .friend{
+                            font-size: 14px;
+                            justify-content: center;
+                            border-top-left-radius: 50%;
+                            border-bottom-left-radius: 50%;
+                            border-top-right-radius: 50%;
+                            border-bottom-right-radius: 50%;
+                        }
+                        .add-friend:hover {
+                            background: $purple-color;
+                            color: white;
+                        }
+                        .avatar{
+                            font-size: 30px;
+                        }
+                    }
+                }
+                .load-more-container {
+                    margin: 25px auto 5px;
+                    display: flex;
+                    flex-direction: row;
+                    .load-more-btn {
+                        background: $yellow-color;
+                        /*border-radius: 0;*/
+                        justify-content: center;
+                        font-family: basker-bold;
+                        /*font-size: 15px;*/
+                        transition: .5s;
+                        width: 200px;
+                        &:hover {
+                            background: $purple-color;
+                            color: white;
+                            width: 270px;
+                            @include respond-at-max(480px) {
+                                width: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+}
+}
+
+

@@ -1,0 +1,101 @@
+@import '../../shared/theme/app.scss';
+
+.chapters-list-container {
+    .chapters-inner-container {
+        .action-bar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .title {
+                font-family: basker-bold;
+                font-size: 15px;
+            }
+            .new-btn {
+                background-color: $yellow-color;
+                font-family: basker-bold;
+                font-size: 12px;
+                padding: 4px 8px;
+                border-radius: 4px;
+                transition: .3s;
+                .add-icon {
+                    font-size: 10px;
+                }
+                &:hover {
+                    cursor: pointer;
+                    background-color: $purple-color;
+                    color: white;
+
+                }
+            }
+        }
+        .chapters-list {
+            margin-top: 20px;
+            .chapter-record {
+                margin-bottom: 10px;
+                border-radius: 7px;
+                text-decoration: none;
+                display: block;
+                padding: 10px 10px 8px 15px;
+                -webkit-box-shadow: 1px 1px 2px 1px #ccc;
+                -moz-box-shadow: 1px 1px 2px 1px #ccc;
+                box-shadow: 1px 1px 2px 1px #ccc;
+                transition: .3s;
+                color: black;
+                border-left: 4px solid $purple-color;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &:hover {
+                    cursor: pointer;
+                    background-color: $yellow-color;
+                    /*border-right: 4px solid $purple-color;*/
+                    border-left: 0px solid $purple-color;
+                }
+                .chap-title {
+                    font-family: basker-bold;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                    text-transform: capitalize;
+                }
+                .chap-description {
+                    font-family: basker-regular;
+                    font-size: 13px;
+                    // color: lighten(black, 20%);
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-align: justify;
+                }
+            }
+            .no-chapter {
+                padding: 50px 0;
+                .new-btn {
+                    background-color: $yellow-color;
+                    font-family: basker-bold;
+                    width: 150px;
+                    margin: 0 auto;
+                    font-size: 12px;
+                    padding: 5px 8px;
+                    border-radius: 4px;
+                    transition: .3s;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    .add-icon {
+                        font-size: 10px;
+                        margin-bottom: 7px;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        background-color: $purple-color;
+                        color: white;
+    
+                    }
+                }   
+            }
+        }
+    }
+}

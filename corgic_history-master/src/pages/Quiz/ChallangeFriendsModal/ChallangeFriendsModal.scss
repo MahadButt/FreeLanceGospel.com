@@ -1,0 +1,140 @@
+@import '../../../shared/theme/app.scss';
+.challenge-modal-container {
+	// width: 100%;
+	// max-width: 90%;
+	@include respond-at-max(480px) {
+		// max-width: 97%;
+	}
+	.modal-content {
+		// background-color: rgba(0,0,0, 0.8);
+		// border-radius: 10px;
+		// border: 0 !important;
+		max-height: 90vh;
+		@include respond-at-max(1024px) {
+			max-height: 95vh;
+		}
+		@include respond-at-max(480px) {
+			max-height: 97vh;
+		}
+		overflow-y: auto;
+		// background: $light-color;
+	}
+	.challenge-friends-wrapper {
+		position: relative;
+		// background: $light-color;
+		padding: 20px 10px 10px;
+			.times-icon {
+				position: absolute;
+				top:0;
+				right: 0;
+				color: $purple-color;
+				z-index: 1;
+				&:hover {
+					color: $navy-blue-color;
+					cursor: pointer;
+				}
+				.icon {
+					font-size: 22px;
+				}
+			}
+			.title {
+				font-family: basker-bold;
+				text-align: center;
+				font-size: 16px;
+			}
+			.sub-title {
+				font-family: basker-regular;
+				text-align: center;
+				font-size: 13px;
+				margin-top: 2px;
+			}
+			.challenge-friends-list {
+				// background: red;
+				margin: 20px 0 10px;
+				// padding: 10px 5px;
+				.action-col {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: space-between;
+					margin-bottom: 10px;
+					padding-left: 5px;
+					padding-right: 5px;
+					.selected-lable {
+						font-family: basker-bold;
+						font-size: 13px;
+					}
+					.send-button {
+						background-color: $yellow-color;
+						color: black;
+						font-family: basker-bold;
+						border-radius: 4px;
+						transition: .3s;
+						padding: 5px 10px;
+						font-size: 12px;
+						&.disabled {
+							background-color: lighten($yellow-color, 20%);
+							cursor: auto;
+							color: rgba(0,0,0, .5);
+						}
+						&.active {
+							&:hover {
+								background-color: $purple-color;
+								color: white;
+								cursor: pointer;
+							}
+						}
+					}
+				}
+				.friend-cols {
+					padding-left: 5px;
+					padding-right: 5px;
+					.friend {
+						// background: $yellow-color;
+						margin-bottom: 8px;
+						padding: 8px;
+						border-radius: 5px;
+						transition: .5s;
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
+						align-items: center;
+						-webkit-box-shadow: 1px 1px 5px 3px #ccc;
+						-moz-box-shadow: 1px 1px 5px 3px #ccc;
+						box-shadow: 1px 1px 5px 3px #ccc;
+						cursor: pointer;
+						.avatar-wrapper {
+							display: flex;
+							flex-direction: row;
+							align-items: center;
+							img {
+								width: 30px;
+								height: 30px;
+								border-radius: 50%;
+								margin-right: 7px;
+							}
+							.user-name {
+								font-family: basker-bold;
+								text-transform: capitalize;
+							}
+						}
+						input {
+							cursor: pointer;
+						}
+						&:hover {
+							// background: $yellow-color;
+							// cursor: pointer;
+							// color: white;
+						}
+					}
+				}
+				.no-data {
+					text-align: center;
+					font-family: basker-regular;
+					color: gray;
+					padding: 30px 0;
+					font-size: 13px;
+				}
+			}
+	}
+}

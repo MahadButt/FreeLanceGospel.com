@@ -1,0 +1,95 @@
+@import '../../shared/theme/app.scss';
+.create-post-container {
+	background: $light-color;
+	.create-post-inner-container {
+		height: 100%;
+        min-height: 100vh;
+        padding: 50px 10px 80px;
+        .title-wrapper {
+            text-align: center;
+            .title {
+                font-family: basker-bold;
+                font-size: 24px;
+                @include respond-at-max(480px) {
+                    font-size: 20px;
+                }
+            }
+            .custom-border {
+                border-bottom: 4px solid $orange-color;
+                width: 160px;
+                margin: 2px auto 0;
+                @include respond-at-max(480px) {
+                    width: 150px;
+                }
+                
+            }
+        }
+        .sub-title {
+            text-align: center;
+            margin: 15px 0px 45px;
+            font-family: basker-regular;
+            font-size: 15.5px;
+            @include respond-at-max(480px) {
+                font-size: 15px;
+            }
+        }
+        .create-blog-form-wrapper {
+        	width: 60%;
+        	margin: 0 auto 0;
+            padding: 48px 48px 24px;
+            background: white;
+            border-radius: 5px;
+            -moz-box-shadow: 0px 0px 10px 2px #ccc;
+            -webkit-box-shadow: 0px 0px 10px 2px #ccc;
+            box-shadow: 0px 0px 10px 2px #ccc;
+            @include respond-at-max(1024px) {
+                width: 80%;
+            }
+            @include respond-at-max(768px) {
+                width: 85%;
+            }
+            @include respond-at-max(480px) {
+                width: 98%;
+            }
+
+            .input-field {
+            	margin-bottom: 20px;
+                .ui.input { 
+                    input {
+                    }
+                }
+                .field-label {
+                    font-family: basker-bold;
+                }
+                .field-error {
+                	font-family: basker-regular;
+                	font-size: 12px;
+                	color: red;
+                	margin-top: 5px;
+                }
+            }
+            .submit-btn {
+            	margin: 25px auto 5px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                .ui.button {
+                    background: $yellow-color;
+                    /*border-radius: 0;*/
+                    font-family: basker-bold;
+                    /*font-size: 15px;*/
+                    transition: .5s;
+                    width: 200px;
+                    &:hover {
+                        background: $purple-color;
+                        color: white;
+                        width: 270px;
+                        @include respond-at-max(480px) {
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+	}
+}

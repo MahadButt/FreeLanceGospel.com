@@ -1,0 +1,91 @@
+@import '../../shared/theme/app.scss';
+.new-contact-us-container {
+	padding-top: 35px;
+	padding-bottom: 35px;
+	.new-contact-us-row {
+		.title-section {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 0 20px;
+			@include respond-at-max(1024px) {
+                padding: 0 15px;
+            }
+            @include respond-at-max(768px) {
+                padding: 0 15px;
+            }
+			@include respond-at-max(480px) {
+	            align-items: center;
+	            padding: 0 15px
+	        }
+			.title-wrapper {
+				.title {
+					font-size: 28px;
+		            font-family: basker-bold;
+				}
+				.custom-border {
+					width: 50px;
+		            height: 4px;
+		            background: black;
+		            @include respond-at-max(480px) {
+			            width: 120px;
+			            margin: auto;
+			        }
+				}
+			}
+			.description {
+				font-family: basker-regular;
+				margin: 15px 0 5px;
+			}
+			.email-wrapper {
+				font-family: basker-regular;
+				.email {
+					font-family: basker-bold;
+				}
+			}
+		}
+		.form-section {
+			.form-row {
+				.form-fields-wrapper {
+					@include respond-at-max(480px) {
+						margin: 50px 0;
+			        }
+					.field-item {
+						margin-bottom: 5px;
+						input, textarea {
+							border-radius: 0;
+						}
+						.field-error {
+							margin-top: 2px;
+							font-size: 11.5px;
+							font-family: basker-regular;
+							color: maroon;
+						}
+					}
+					.contact-us-submit-btn {
+						.ui.button {
+							border-radius: 0 !important;
+							width: 50%;
+							margin: 0 auto 0;
+							display: block;
+							background: $navy-blue-color;
+							color: white;
+							transition: all 1s ease;
+							&:hover {
+								width: 100%;
+								background: $blue-color;
+								/*color: black;*/
+							}
+						}
+					}
+				}
+				.form-image-wrapper {
+					img {
+						width:200px;
+						margin: auto;
+					}
+				}
+			}
+		}
+	}
+}

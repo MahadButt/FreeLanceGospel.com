@@ -1,0 +1,124 @@
+@import '../../../shared/theme/app.scss';
+.stories-wrapper {
+	background: whitesmoke;
+	width: 100%;
+	.box-wrapper {
+		text-align: center;
+		padding: 30px 0px 50px;
+		@media screen and (max-width: 480px) {
+            padding:  0px 0px 50px;
+        }
+		display: flex;
+		flex-direction: row;
+		//align-items: center;
+		justify-content: center;
+		@media screen and (max-width: 480px) {
+            flex-direction: column;
+        }
+		.left-box {
+			/*background: red;*/
+			width: 250px;
+			@media screen and (max-width: 480px) {
+	            width: 100%;
+	        }
+			.image-preview {
+				img {
+					width: 250px;
+					@media screen and (max-width: 480px) {
+			            width: 100%;
+			        }
+				}
+			}
+			.title {
+				font-size: 18px;
+				font-family: baskel-regular;
+				margin-top: 5px;
+				white-space: nowrap;
+				  overflow: hidden;
+				  text-overflow: ellipsis;
+			}
+		}
+		.right-box {
+			/*background: purple;*/
+			padding: 20px 0px 20px 40px;
+			.right-inner-wrapper {
+				display: flex;
+				flex-direction: row;
+				align-items: flex-start;
+				.avatar-wrapper {
+					/*display: flex;
+					flex-direction: row;
+					align-items: center;*/
+					img {
+						width: 50px;
+						height: 50px;
+						border-radius: 50%;
+						margin-right: 15px;
+					}
+				}
+				.detail-wrapper {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					justify-content: center;
+					.name-wrapper {
+						display: flex;
+						flex-direction: column;
+						align-items: flex-start;
+						font-family: basker-regular;
+						div {
+							font-size: 15px;
+							font-weight: 500;
+						}
+						.name1 {
+							display: flex;
+							flex-direction: row;
+							align-items: center;
+							.church-title {
+								margin-right: 7px;
+							}
+						}
+					}
+					.time-ago {
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						margin-top: 20px;
+						font-size: 13px;
+						font-family: basker-regular;
+						.icon {
+							margin-bottom: 5px;
+							/*margin-right: 5px;*/
+						}
+					}
+					.see-detail-btn {
+						margin-top: 15px;
+						padding: 5px 15px;
+						font-size: 12px;
+						border-radius: 2px;
+						background: $yellow-color;
+						display: inline-block;
+						float: left;
+						color: black;
+						font-family: basker-regular;
+						transition: .5s;
+						&:hover {
+							background: $purple-color;
+							color: white;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+	}
+	.carousel-indicators {
+		li {
+			background-color: $orange-color;
+			height: 4px;
+		}
+	}
+	.carousel-control-next-icon, .carousel-control-prev-icon {
+		/*background-color: $orange-color;*/
+	}
+}

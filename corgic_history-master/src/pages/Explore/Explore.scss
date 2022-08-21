@@ -1,0 +1,144 @@
+@import '../../shared/theme/app.scss';
+.explore {
+    .video-banner-container {
+        width: 100%;
+        height: 100%;
+        @media screen and (min-width: 1025px) { 
+            min-height: 100vh;
+        }
+        video {
+            height: inherit;
+            width: inherit;
+        }
+    }
+    .explore-stories-container {
+        display: flex;
+        flex-direction: row;
+        @include respond-at-max(480px) {
+            flex-direction: column;
+        }
+        .categories-container {
+            width: 20%;
+            background: $light-color;
+            @include respond-at-min(480px) {
+                min-height: 100vh;
+                height: 100%;
+                position: sticky;
+                top: 0;
+            }
+            @include respond-at-max(768px) {
+                width: 25%;
+            }
+            @include respond-at-max(480px) {
+                //display: none;
+                width: 100%;
+            }
+        }
+        .stories-container {
+            padding: 20px 15px;
+            width: 80%;
+            @include respond-at-max(480px) {
+                padding: 30px 15px;
+            }
+            @include respond-at-max(768px) {
+                width: 75%;
+            }
+            @include respond-at-max(480px) {
+                width: 100%;
+            }
+
+            .google-ads {
+                width: 50%;
+                height: 70px;
+                //background: $yellow-color;
+                margin: 0px auto 25px;
+                //opacity: 0.8;
+            }
+
+            .title-btn-wrapper {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin: 10px 200px 30px;
+                padding: 0px 15px;
+                @include respond-at-max(768px) {
+                    margin: 10px 100px 30px;
+                }   
+                @include respond-at-max(480px) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin: 10px 0px 30px;
+                }
+                transition: all 1s ease;
+                &.loaded {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                .header-title {
+                    font-family: basker-bold;
+                    font-size: 22px;
+                }
+                a {
+                    text-decoration: none;
+                    .create-btn {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        background: $yellow-color;
+                        color: black;
+                        padding: 6px 12px;
+                        transition: all .5s ease;
+                        border-radius: 3px;
+                        @include respond-at-max(480px) {
+                            margin-top: 10px;
+                        }
+                        &:hover {
+                            background: $purple-color;
+                            color: white;
+                        }
+                        .plus {
+                            margin-bottom: 7px;
+                            font-size: 11px;
+                            margin-right: 5px;
+                        }
+                        .label {
+                            font-family: basker-bold;
+                            font-size: 13.5px;
+                        }
+                    }
+                }
+            }
+
+            .explore-stories-wrapper {
+                .blog-item {
+                    margin-bottom: 20px;
+                }
+            }
+            .load-more-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin: 20px 0px 20px;
+                .load-more-btn {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    background: $yellow-color;
+                    color: black;
+                    padding: 10px 35px;
+                    transition: all .5s ease;
+                    border-radius: 3px;
+                    font-family: basker-bold;
+                    font-size: 14px;
+                    &:hover {
+                        background: $purple-color;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

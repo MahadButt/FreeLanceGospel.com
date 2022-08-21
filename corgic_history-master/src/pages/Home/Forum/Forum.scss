@@ -1,0 +1,76 @@
+@import '../../../shared/theme/app.scss';
+.forum-wrapper {
+	background: whitesmoke;
+	width: 100%;
+	.box-wrapper {
+		text-align: center;
+		width: 60%;
+		margin: auto;
+		padding: 20px 0px 50px;
+		.item-wrapper {
+			.title {
+				font-family: basker-regular;
+				font-size: 20px;
+				line-height: 26px;
+				@media screen and (max-width: 480px) {
+		            font-size: 18px;
+		        }
+			}
+			.view-replies {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-around;
+				margin-top: 20px;
+				.views, .replies {
+					font-size: 16px;
+					font-family: basker-regular;
+					@media screen and (max-width: 480px) {
+			            font-size: 15px;
+			        }
+				}
+			}
+			.last-post {
+				.label {
+					font-size: 20px;
+					font-family: basker-italic;
+					margin-top: 5px;
+					@media screen and (max-width: 480px) {
+			            font-size: 18px;
+			        }
+				}
+				.data {
+
+				}
+				.time {
+
+				}
+			}
+			.see-detail-btn {
+				margin-top: 15px;
+				padding: 5px 15px;
+				font-size: 12px;
+				border-radius: 2px;
+				background: $yellow-color;
+				display: inline-block;
+				font-family: basker-regular;
+				color: black;
+				transition: .5s;
+				&:hover {
+					background: $purple-color;
+					color: white;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	.carousel-indicators {
+		li {
+			background-color: $orange-color;
+			//height: 4px;
+		}
+	}
+	.carousel-control-next-icon, .carousel-control-prev-icon {
+		/*background-color: $orange-color;*/
+	}
+}

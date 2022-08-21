@@ -1,0 +1,137 @@
+@import '../../../shared/theme/app.scss';
+
+.quiz-result-page-container {
+    .quiz-result-inner-container {
+        height: 100%;
+        min-height: 100vh;
+        padding: 100px 0 70px;
+        background: $light-color;
+
+        .result-wrapper {
+            position: relative;
+            width: 55%;
+            background-color: white;
+            padding: 70px 30px 30px;
+            margin: auto;
+            border-radius: 40px;
+            -moz-box-shadow: 0px 0px 5px 1px $purple-color;
+            -webkit-box-shadow: 0px 0px 5px 1px $purple-color;
+            box-shadow: 0px 0px 5px 1px $purple-color;
+            @include respond-at-max(1024px) {
+                width: 90%;
+                padding: 100px 30px 15px;
+            }
+            @include respond-at-max(480px) {
+                width: 95%;
+                padding: 75px 30px 15px;
+            }
+            .logo-wrapper {
+                position: absolute;
+                top: -60px;
+                left: 50%;
+                right: 50%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-bottom: 10px;
+                img {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                }
+            }
+            .result-inner-wrapper {
+                .result-title {
+                    font-family: basker-bold;
+                    font-size: 22px;
+                    text-align: center;
+                }
+                .result-subtitle {
+                    font-family: basker-regular;
+                    text-align: center;
+                    margin-top: 10px;
+                    font-size: 16px;
+                }
+                /*.quiz-banner {
+                    text-align: center;
+                    margin: 30px 0 40px;
+                    img {
+                        width: 25%;
+                    }
+                }*/
+                .score-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 30px 0 50px;
+                    .score {
+                        font-family: basker-regular;
+                        font-size: 16px;
+                        position: relative;
+                        .object {
+                            width: 50px;
+                            height: 25px;
+                            // background-color: $yellow-color;
+                            // border-radius: 50%;
+                            position: absolute;
+                            transition: 1s;
+                            opacity: 0;
+                            left: 0;
+                            top: 0;
+                            transform: rotate(-45deg);
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-end;
+                            .coin-icon {
+                                width: 20px;
+                                height: 20px;
+                                &:nth-child(2) {
+                                    margin: 0 -10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .buttons-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    @include respond-at-max(480px) {
+                        flex-direction: column;
+                    }
+                    .button-item {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        .go-to-quiz, .challenge-btn {
+                            border: none;
+                            height: 35px;
+                            width: 160px;
+                            border-radius: 5px;
+                            font-family: basker-bold;
+                            background: $purple-color;
+                            color: white;
+                            font-size: 14px;
+                            transition: all .5s ease;
+                            &:hover {
+                                // width: 180px;
+                                background: $yellow-color;
+                                color: black;
+                            }
+                        }
+                        .challenge-btn {
+                            width: 160px;
+                            margin-left: 5px;
+                            @include respond-at-max(480px) {
+                                margin-left: 0;
+                                margin-top: 7px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

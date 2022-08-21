@@ -1,0 +1,171 @@
+@import '../../shared/theme/app.scss';
+.userlist_container {
+    background: $light-color;
+    height: 100%;
+    min-height: 100vh;
+    .video-banner-container {
+        width: 100%;
+        height: 100%;
+        @media screen and (min-width: 1025px) { 
+            min-height: 100vh;
+        }
+        video {
+            height: inherit;
+            width: inherit;
+        }
+    }
+    .boot-container {
+        height: 100%;
+        min-height: 100vh;
+    }
+    .title-btn-wrapper {
+        padding:30px 20px;
+        text-align: center;
+        .header-title {
+            font-family: basker-bold;
+            font-size: 24px;
+            @include respond-at-max(768px) {
+                font-size: 20px;
+            }
+            @include respond-at-max(480px) {
+                font-size: 16px;
+            }
+        }
+        .custom-border {
+            border-bottom: 3px solid $orange-color;
+            width: 130px;
+            margin: 6px auto 0;
+            @include respond-at-max(480px) {
+                width: 100px;
+            }
+            
+        }
+    }
+    .userList-content-wrapper {
+        width: 85%;
+        margin: 0 auto 0;
+        padding: 20px 30px 20px;
+        background: white;
+        border-radius: 5px;
+        -moz-box-shadow: 0px 0px 10px 2px #ccc;
+        -webkit-box-shadow: 0px 0px 10px 2px #ccc;
+        box-shadow: 0px 0px 10px 2px #ccc;
+        @include respond-at-max(768px) {
+            width: 100%;
+        }
+        @include respond-at-max(480px) {
+            padding: 20px 2px 20px;
+            width: 100%;
+        }
+                .user-list-wrapper {
+                    .user-item {
+                        border: 2px solid $orange-color;
+                        padding: 15px 15px;
+                        margin:15px 0;
+                        border-radius: 50px;
+                        @include respond-at-max(480px) {
+                            padding: 15px 5px;
+                        }
+                        .user-title,.user-description {
+                                text-decoration: none;
+                                color: black;
+                                font-family: basker-regular;
+                                font-size: 13px;
+                                margin-top: 5px;
+                                transition: all .3s ease;
+                        }
+                        .user-title:hover {
+                            font-size: 18px;
+                            color: $purple-color;
+                        }
+                        .add-friend{
+                            font-size: 14px;
+                            justify-content: center;
+                            background: $yellow-color;
+                            color: black;
+                            transition: all .5s ease;
+                            border-top-left-radius: 50%;
+                            border-bottom-left-radius: 50%;
+                            border-top-right-radius: 50%;
+                            border-bottom-right-radius: 50%;
+                        }
+                        .friend{
+                            font-size: 14px;
+                            justify-content: center;
+                            border-top-left-radius: 50%;
+                            border-bottom-left-radius: 50%;
+                            border-top-right-radius: 50%;
+                            border-bottom-right-radius: 50%;
+                        }
+                        .add-friend:hover {
+                            font-size: 18px;
+                            background: $purple-color;
+                            color: white;
+                        }
+                        .avatar{
+                            font-size: 30px;
+                        }
+                    }
+                    .load-more-container {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 20px 0px 20px;
+                        .load-more-btn {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            background: $yellow-color;
+                            color: black;
+                            padding: 10px 35px;
+                            transition: all .5s ease;
+                            border-radius: 3px;
+                            font-family: basker-bold;
+                            font-size: 14px;
+                            &:hover {
+                                background: $purple-color;
+                                color: white;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .search-box{
+                        padding: 2%;
+                        display: flex;
+                        border-radius: 20px;
+                        border: 1px solid #EAEAEA;
+                        align-items: center;
+                        height: 40px;                 
+                        .searchIcon{
+                            cursor: pointer;
+                        }
+                        .denomination,.country,.city,.search{
+                            border: none;
+                            width: 100%;
+                            outline: none;
+                            border-radius: 5%;
+                        }
+                      }
+                      .search-btn{
+                        font-size: 14px;
+                        justify-content: center;
+                        // background: $yellow-color;
+                        color: black;
+                        transition: all .5s ease;
+                        border-top-left-radius: 50%;
+                        border-bottom-left-radius: 50%;
+                        border-top-right-radius: 50%;
+                        border-bottom-right-radius: 50%;
+                        @include respond-at-max(767px) {
+                            width: 100%;
+                            border-radius: 20px;
+                            margin: 0.5rem;
+                        }
+                    }
+                      .search-box:focus{
+                        outline: none;
+                     }
+                }
+            }
+}

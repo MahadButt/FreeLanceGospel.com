@@ -1,0 +1,14 @@
+.ProfileSettings{
+    
+    &--title{
+        margin-bottom: 20px;
+    }
+}
+
+.BasicSettings, .WorkEducationSettings{
+    padding: 20px 10px;
+
+    @media only screen and (max-width: 720px){
+        padding: 0px;
+    }
+}

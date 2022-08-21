@@ -1,0 +1,221 @@
+@import '../../shared/theme/app.scss';
+
+.story-detail-container {
+    background-color: $light-color;
+    padding-top: 50px;
+    @include respond-at-max(480px) {
+        padding-top: 30px;
+    }
+    .story-detail-inner-container {
+        /*padding: 50px 0 50px;*/
+        .story-detail-row {
+            .story-info-col {
+                .story-info-box {
+                    /*position: -webkit-sticky;
+                    position: sticky;
+                    top: 0;*/
+                    .title-wrapper {
+                        /*padding-top: 30px;*/
+                        .title {
+                            text-align: center;
+                            font-family: basker-bold;
+                            font-size: 18px;
+                        }
+                        .custom-border {
+                            width: 70px;
+                            margin: auto;
+                            height: 2.5px;
+                            background: $orange-color;
+                        }
+                    }
+                    .avatar-wrapper {
+                        background: white;
+                        width: 90%;
+                        margin: 20px auto 10px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 10px 0 10px;
+                        border-radius: 5px;
+                        -moz-box-shadow: 3px 3px 5px 2px #ccc;
+                        -webkit-box-shadow: 3px 3px 5px 2px #ccc;
+                        box-shadow: 3px 3px 5px 2px #ccc;
+                        @include respond-at-max(1024px) {
+                            width: 100%
+                        }
+                        .avatar {
+                            width: 70px;
+                            height: 70px;
+                            border-radius: 50%;
+                        }
+                        .church-title {
+                            margin-top: 15px;
+                            font-family: basker-bold;
+                        }
+                        .name {
+                            font-family: basker-regular;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
+                        .profile-link {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            margin-top: 10px;
+                            cursor: pointer;
+                            color: $purple-color;
+                            &:hover {
+                                color: $blue-color;
+                            }
+                            .label {
+                                font-family: basker-regular;
+                                font-size: 13px;    
+                                transition: all .3s ease;
+                                margin-right: 2px;
+                                &:hover {
+                                    margin-right: 5px;
+                                }
+                            }
+                            .icon {
+                                font-size: 14.5px;
+                            }
+
+                        }
+                    }
+                    .category-wrapper {
+                        background: white;
+                        width: 90%;
+                        margin: 0px auto 0px;
+                        padding: 15px 15px 10px 15px;
+                        border-radius: 5px;
+                        -moz-box-shadow: 3px 3px 5px 2px #ccc;
+                        -webkit-box-shadow: 3px 3px 5px 2px #ccc;
+                        box-shadow: 3px 3px 5px 2px #ccc;
+                        @include respond-at-max(1024px) {
+                            width: 100%
+                        }
+                        .category, .sub-category ,.chapter{
+                            font-size: 13px;
+                            font-family: basker-regular;
+
+                            .cat-label {
+                                font-family: basker-bold;
+                            }
+                        }
+                        .chapter {
+                            text-transform: capitalize;
+                        } 
+                        .sub-category {
+                            margin-top: 3px;
+                        }
+                        .view-chapters-stories {
+                            text-decoration: none;
+                            background: $yellow-color;
+                            color: black;
+                            padding: 5px 10px;
+                            font-family: basker-bold;
+                            font-size: 13px;
+                            border-radius: 50px;
+                            display: inline-block;
+                            margin: 5px 0;
+                            transition: .5s;
+                            &:hover {
+                                background-color: $purple-color;
+                                color: white;
+                                cursor: pointer;
+                            }
+                        }
+                        .tag-label {
+                            font-family: basker-bold;
+                            font-size: 13px;
+                            margin: 5px 0 1px;
+                        }
+                        .tags-list {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            align-items: center;
+
+                            .tag {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                justify-content: center;
+                                background: $purple-color;
+                                color: white;
+                                margin: 2px 3px;
+                                font-family: basker-regular;
+                                font-size: 11.5px;
+                                padding: 4px 10px;
+                                border-radius: 50px;
+                                &:hover {
+                                    // background: $orange-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .story-description-col {
+                @include respond-at-max(480px) {
+                    margin-top: 40px;
+                }
+                .story-image {
+                    background: rgba($color: #000000, $alpha: 0.1);
+                    height: 40vh;
+                    -moz-box-shadow: 3px 3px 5px 2px #ccc;
+                    -webkit-box-shadow: 3px 3px 5px 2px #ccc;
+                    box-shadow: 3px 3px 5px 2px #ccc;
+                    /*width: 50vh;*/
+                    /*margin: auto;*/
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        width: 100%;
+                        object-fit: contain;
+                        object-position: center;
+                    }
+                }
+                .description-box {
+                    .story-title {
+                        font-family: basker-regular;
+                        font-size: 24px;
+                        text-align: center;
+                        margin: 20px 0px 5px;
+                        @include respond-at-max(480px) {
+                            font-size: 20px;
+                            margin-top: 30px;
+                        }
+                    }
+                    .story-sub-title {
+                        font-family: basker-regular;
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                    .story-description {
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+        .story-comments-row {
+            margin: 100px auto 80px;
+            /*background: white;*/
+            /*-moz-box-shadow: 3px 3px 5px 2px #ccc;
+            -webkit-box-shadow: 3px 3px 5px 2px #ccc;
+            box-shadow: 3px 3px 5px 2px #ccc;
+            padding: 20px;*/
+            width: 80%;
+            @include respond-at-max(1024px) {
+                width: 90%;
+            }
+            @include respond-at-max(480px) {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+@import '../../shared/theme/app.scss';
+.comments-container {
+	width: 100%;
+	.title-wrapper {
+		.title1 {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			.icon {
+				font-size: 24px;
+			}
+			.label {
+				font-family: basker-bold;
+				font-size: 24px;
+				.length {
+					font-size: 20px;
+				}
+			}
+		}
+		.title2 {
+			font-family: basker-regular;
+			font-size: 14px;
+			padding-left: 35px;
+			margin-top: 5px;
+		}
+	}
+	.add-comments-wrapper {
+		margin-top: 30px;
+		display: flex;
+		flex-direction: row;
+		.logged-user-avatar {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			margin-right: 10px;
+			img {
+				width: 50px;
+				height: 50px;
+				margin: 0 auto 0;
+			}
+		}
+		.add-comments-form {
+			width: 100%;
+			.input-field {
+				.text-area {
+					width: 100%;
+					border: 1px solid lightgray;
+				    border-radius: 10px;
+				    padding: 10px 20px 0px;
+
+				    &:focus {
+				    	outline: none;
+				    	box-shadow: 0 0 3px 0 $purple-color;
+				    }
+				}
+				
+			}
+			.button-wrapper {
+				margin-top: 10px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				@include respond-at-max(480px) {
+	            	flex-direction: column;
+	            }
+				/*align-items: center;*/
+				.field-error {
+					color: red;
+					font-family: basker-regular;
+					font-size: 13px;
+				}
+				.ui.button {
+					background: $purple-color;
+					color: white;
+					transition: .5s;
+					@include respond-at-max(480px) {
+		            	margin-top: 10px;
+		            }
+					&:hover {
+						background: $yellow-color;
+						color: black;
+					}
+				}
+			}
+
+		}
+	}
+	.comment-divider {
+		width: 25%;
+		height: 1px;
+		margin: 20px auto 20px;
+		background: lightgray;
+	}
+	.not-comments {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-top: 30px;
+		.label1 {
+			font-family: basker-bold;
+			font-size: 18px;
+		}
+		.label2 {
+			font-family: basker-regular;
+			font-size: 14px;
+			margin-top: 5px;
+		}
+	}
+	.prev-comments {
+		padding-left: 25px;
+		margin-top: 40px;
+		.comment-item {
+			display: flex;
+			flex-direction: row;
+			margin-bottom: 20px;
+			.avatar {
+				img {
+					width: 50px;
+					height: 50px;
+					border-radius: 50%;
+				}
+			}
+			.comment-description {
+				padding: 5px 0px 0px 20px;
+				.user-name-wrapper {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					.link {
+						text-decoration: none;
+						color: black;
+						.name {
+							font-family: basker-bold;
+							font-size: 15px;
+							&:hover {
+								color: $purple-color;
+							}
+						}
+					}
+					.comment-date {
+						font-family: basker-regular;
+						font-size: 12.5px;
+						margin-left: 15px;
+						color: gray;
+					}
+				}
+				.actual-comment {
+					font-family: basker-regular;
+					margin-top: 7px;
+					text-align: justify;
+				}
+			}
+		}
+	}
+	
+}
