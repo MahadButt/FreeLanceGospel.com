@@ -1,0 +1,1 @@
+{"version":3,"sources":["Stats.scss"],"names":[],"mappings":"AAEI,YACI,eAAgB,CACnB,iBAID,cAAe,CACf,eAAgB","file":"13.60210653.chunk.css","sourcesContent":[".Stats{\r\n    \r\n    &--msg{\r\n        margin-top: 50px;\r\n    }\r\n}\r\n\r\n.contact-modal-p{\r\n    font-size: 18px;\r\n    line-height: 1.7;\r\n}"]}
