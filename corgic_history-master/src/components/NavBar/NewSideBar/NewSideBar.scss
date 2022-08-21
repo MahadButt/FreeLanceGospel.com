@@ -1,0 +1,83 @@
+@import '../../../shared/theme/app.scss';
+.new-sidebar-nav {
+	background: $navy-blue-color;
+	transition: all .3s ease;
+	width: 0%;
+	height: 100%;
+	min-height: 100vh;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 999;
+	display: none;
+	padding: 25px;
+
+	&.open-sidebar {
+		display: block;
+		@media screen and (max-width: 1024px) { 
+			width: 50%;
+		}
+		@media screen and (max-width: 768px) { 
+			width: 60%;
+		}
+		@media screen and (max-width: 480px) { 
+			width: 75%;
+		}
+	}
+
+	.header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		.avatar {
+			/*background: $orange-color;
+			padding: 20px;
+			border-radius: 50%;*/
+		}
+		.icon {
+			color: white;
+		}
+	}
+	.search-component {
+		//width: 90%;
+		margin: 30px 0px;
+	}	
+	.links-wrapper {
+		a {
+			text-decoration: none;
+		}
+		.link-item {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			color: white;
+			font-size: 20px;
+			margin: 10px 0px;
+			&:hover {
+				color: $orange-color;
+			}
+		}
+		.icon {
+			margin-right: 10px;
+		}
+	}
+	.logout-btn {
+		width: 120px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		background: $blue-color;
+		color: white;
+		padding: 7px 15px;
+		font-family: basker-bold;
+		border-radius: 5px;
+		font-size: 14px;
+		margin: 30px auto 0;
+		&:hover {
+			background: $orange-color;
+			cursor: pointer;
+		} 
+	}
+}

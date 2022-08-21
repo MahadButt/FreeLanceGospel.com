@@ -1,0 +1,15 @@
+.SideNavBar{
+    padding: 10px 20px;
+
+    &--header{
+        margin: 20px 0px;
+    }
+
+    &--link{
+        margin-bottom: 10px;
+    }
+    
+    .menu-close-icon i{
+        cursor: pointer;
+    }
+}

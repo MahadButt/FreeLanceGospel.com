@@ -1,0 +1,226 @@
+@import '../../shared/theme/app.scss';
+.accounts-privacy{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #7f8898;
+    text-align: left;
+    
+    p{
+        line-height: 1.7;
+    }
+
+    a{
+        text-decoration: underline;
+    }
+}
+
+.accounts-link{
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: all 0.1s;
+    cursor: pointer;
+    
+    &:hover{
+        color: #1e90ff;
+        text-decoration: underline;
+    }
+}
+
+.account-social-btn{
+    margin: 10px 0px;
+}
+
+.Login--info{
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (max-width: 720px){
+        margin-top: 0px;
+    }
+}
+//To show the Modal in center on Screen
+.dimmed.dimmable > .ui.animating.dimmer, .dimmed.dimmable > .ui.visible.dimmer, .ui.active.dimmer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ui.modal,
+  .ui.active.modal {
+      background: $light-color;
+    margin: 0 auto!important;
+    top: 10 !important;
+    left: auto !important;
+    transform-origin: center !important;
+    transition: all ease .5s;
+    overflow: auto;
+  }
+//To show the Cross in Modal
+  .ui.modal>.close {
+      position: initial;
+      color:rgba(0,0,0,.87)
+  }
+
+  .Login--info img{
+      width:130px
+  }  
+  .login_container {
+	background: $light-color;
+	.login_header {
+        padding:30px 20px 0px;
+        text-align: center;
+            .title {
+                font-family: basker-bold;
+                font-size: 20px;
+                @include respond-at-max(480px) {
+                    font-size: 16px;
+                }
+            }
+            .custom-border {
+                border-bottom: 3px solid $orange-color;
+                width: 130px;
+                margin: 6px auto 0;
+                @include respond-at-max(480px) {
+                    width: 100px;
+                }
+                
+            }
+        .sub-title {
+            text-align: center;
+            margin: 15px 0px 45px;
+            font-family: basker-regular;
+            font-size: 13px;
+            @include respond-at-max(480px) {
+                font-size: 10px;
+            }
+        }
+    }
+    .login-form-wrapper {
+        width: 90%;
+        margin: 0 auto 0;
+        padding: 20px 20px 25px;
+        background: white;
+        border-radius: 5px;
+        -moz-box-shadow: 0px 0px 10px 2px #ccc;
+        -webkit-box-shadow: 0px 0px 10px 2px #ccc;
+        box-shadow: 0px 0px 10px 2px #ccc;
+        @include respond-at-max(1024px) {
+            width: 80%;
+        }
+        @include respond-at-max(768px) {
+            width: 85%;
+        }
+        @include respond-at-max(480px) {
+            width: 100%;
+        }
+
+        .input-field {
+            margin-bottom: 20px;
+            .field-label {
+                font-family: basker-bold;
+            }
+            .field-error {
+                font-family: basker-regular;
+                font-size: 12px;
+                color: red;
+                margin-top: 5px;
+            }
+        }
+        .submit-btn {
+            margin: 25px auto 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .ui.button {
+                background: $yellow-color;
+                /*border-radius: 0;*/
+                font-family: basker-bold;
+                /*font-size: 15px;*/
+                transition: .5s;
+                width: 200px;
+                &:hover {
+                    background: $purple-color;
+                    color: white;
+                    width: 270px;
+                    @include respond-at-max(480px) {
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+.forgot_container {
+	background: $light-color;
+	.forgot_header {
+        padding:50px 20px 20px;
+        text-align: center;
+            .title {
+                font-family: basker-bold;
+                font-size: 20px;
+                @include respond-at-max(480px) {
+                    font-size: 16px;
+                }
+            }
+            .custom-border {
+                border-bottom: 3px solid $orange-color;
+                width: 130px;
+                margin: 6px auto 0;
+                @include respond-at-max(480px) {
+                    width: 100px;
+                }
+                
+            }
+    }
+    .forgot-form-wrapper {
+        width: 90%;
+        margin: 0 auto 0;
+        padding: 20px 30px 25px;
+        background: white;
+        border-radius: 5px;
+        -moz-box-shadow: 0px 0px 10px 2px #ccc;
+        -webkit-box-shadow: 0px 0px 10px 2px #ccc;
+        box-shadow: 0px 0px 10px 2px #ccc;
+        @include respond-at-max(1024px) {
+            width: 80%;
+        }
+        @include respond-at-max(768px) {
+            width: 85%;
+        }
+
+        .input-field {
+            margin-bottom: 20px;
+            .field-label {
+                font-family: basker-bold;
+            }
+            .field-error {
+                font-family: basker-regular;
+                font-size: 12px;
+                color: red;
+                margin-top: 5px;
+            }
+        }
+        .submit-btn {
+            margin: 25px auto 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .ui.button {
+                background: $yellow-color;
+                /*border-radius: 0;*/
+                font-family: basker-bold;
+                /*font-size: 15px;*/
+                transition: .5s;
+                width: 200px;
+                &:hover {
+                    background: $purple-color;
+                    color: white;
+                    width: 270px;
+                    @include respond-at-max(480px) {
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}

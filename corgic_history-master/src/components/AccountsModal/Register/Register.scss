@@ -1,0 +1,100 @@
+@import '../../../shared/theme/app.scss';
+.Register--link{
+    margin-top: 25px;
+}
+.ui.modal,
+.ui.active.modal {
+    background: $light-color;
+  margin: 0 auto!important;
+  top: 10 !important;
+  left: auto !important;
+  transform-origin: center !important;
+  transition: all ease .5s;
+  overflow: auto;
+}
+.register_container {
+	background: $light-color;
+	.register_header {
+        padding:30px 20px 0px;
+        text-align: center;
+            .title {
+                font-family: basker-bold;
+                font-size: 20px;
+                @include respond-at-max(480px) {
+                    font-size: 16px;
+                }
+            }
+            .custom-border {
+                border-bottom: 2px solid $orange-color;
+                width: 130px;
+                margin: 6px auto 0;
+                @include respond-at-max(480px) {
+                    width: 100px;
+                }
+                
+            }
+        .sub-title {
+            text-align: center;
+            margin: 15px 0px 35px;
+            font-family: basker-regular;
+            font-size: 13px;
+            @include respond-at-max(480px) {
+                font-size: 10px;
+            }
+        }
+    }
+    .register-form-wrapper {
+        width: 90%;
+        margin: 0 auto 0;
+        padding: 20px 20px 25px;
+        background: white;
+        border-radius: 5px;
+        -moz-box-shadow: 0px 0px 10px 2px #ccc;
+        -webkit-box-shadow: 0px 0px 10px 2px #ccc;
+        box-shadow: 0px 0px 10px 2px #ccc;
+        @include respond-at-max(1024px) {
+            width: 80%;
+        }
+        @include respond-at-max(768px) {
+            width: 85%;
+        }
+        @include respond-at-max(480px) {
+            width: 100%;
+        }
+
+        .input-field {
+            margin-bottom: 20px;
+            .field-label {
+                font-family: basker-bold;
+            }
+            .field-error {
+                font-family: basker-regular;
+                font-size: 12px;
+                color: red;
+                margin-top: 5px;
+            }
+        }
+        .submit-btn {
+            margin: 25px auto 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .ui.button {
+                background: $yellow-color;
+                /*border-radius: 0;*/
+                font-family: basker-bold;
+                /*font-size: 15px;*/
+                transition: .5s;
+                width: 200px;
+                &:hover {
+                    background: $purple-color;
+                    color: white;
+                    width: 270px;
+                    @include respond-at-max(480px) {
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}

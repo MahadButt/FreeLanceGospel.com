@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px" class="hovered-paths"><g><g>
+	<path style="fill:#FFBA49" d="M233.52,58.744h255.272c12.816,0,23.208,10.392,23.208,23.208V244.4   c0,12.816-10.392,23.208-23.208,23.208H233.52c-12.816,0-23.208-10.392-23.208-23.208V81.952   C210.312,69.136,220.704,58.744,233.52,58.744z" data-original="#32BEA6" class="" data-old_color="#32BEA6"/>
+	<polygon style="fill:#FFBA49" points="442.376,337.224 442.376,244.4 326.344,244.4  " data-original="#32BEA6" class="" data-old_color="#32BEA6"/>
+</g><g>
+	<path style="fill:#415E72;" d="M278.48,383.64H23.208C10.392,383.64,0,373.248,0,360.432V197.984   c0-12.816,10.392-23.208,23.208-23.208H278.48c12.816,0,23.208,10.392,23.208,23.208v162.448   C301.688,373.248,291.296,383.64,278.48,383.64z" data-original="#415E72" class=""/>
+	<polygon style="fill:#415E72;" points="69.624,453.256 69.624,360.432 185.656,360.432  " data-original="#415E72" class=""/>
+</g><g>
+	<rect x="139.24" y="244.4" style="fill:#FFFFFF" width="23.208" height="23.208" data-original="#FFFFFF" class="hovered-path active-path"/>
+	<rect x="92.824" y="244.4" style="fill:#FFFFFF" width="23.208" height="23.208" data-original="#FFFFFF" class="hovered-path active-path"/>
+	<rect x="46.416" y="244.4" style="fill:#FFFFFF" width="23.208" height="23.208" data-original="#FFFFFF" class="hovered-path active-path"/>
+	<rect x="185.68" y="244.4" style="fill:#FFFFFF" width="23.208" height="23.208" data-original="#FFFFFF" class="hovered-path active-path"/>
+	<rect x="232.08" y="244.4" style="fill:#FFFFFF" width="23.208" height="23.208" data-original="#FFFFFF" class="hovered-path active-path"/>
+	<rect x="139.24" y="290.8" style="fill:#FFFFFF" width="23.208" height="23.208" data-original="#FFFFFF" class="hovered-path active-path"/>
+	<rect x="92.824" y="290.8" style="fill:#FFFFFF" width="23.208" height="23.208" data-original="#FFFFFF" class="hovered-path active-path"/>
+	<rect x="46.416" y="290.8" style="fill:#FFFFFF" width="23.208" height="23.208" data-original="#FFFFFF" class="hovered-path active-path"/>
+</g><g>
+	<rect x="349.552" y="128.4" style="fill:#415E72;" width="23.208" height="23.208" data-original="#415E72" class=""/>
+	<rect x="303.136" y="128.4" style="fill:#415E72;" width="23.208" height="23.208" data-original="#415E72" class=""/>
+	<rect x="256.72" y="128.4" style="fill:#415E72;" width="23.208" height="23.208" data-original="#415E72" class=""/>
+	<rect x="396" y="128.4" style="fill:#415E72;" width="23.208" height="23.208" data-original="#415E72" class=""/>
+	<rect x="442.4" y="128.4" style="fill:#415E72;" width="23.208" height="23.208" data-original="#415E72" class=""/>
+	<rect x="349.552" y="174.776" style="fill:#415E72;" width="23.208" height="23.208" data-original="#415E72" class=""/>
+	<rect x="396" y="174.776" style="fill:#415E72;" width="23.208" height="23.208" data-original="#415E72" class=""/>
+	<rect x="442.4" y="174.776" style="fill:#415E72;" width="23.208" height="23.208" data-original="#415E72" class=""/>
+</g></g> </svg>

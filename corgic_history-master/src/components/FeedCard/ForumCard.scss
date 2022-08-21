@@ -1,0 +1,14 @@
+.ForumCard{
+    margin-bottom: 20px;
+
+    &--info{
+        padding: 5px;
+
+        &--title{
+            font-weight: bold;
+            font-size: 17px;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+    }
+}

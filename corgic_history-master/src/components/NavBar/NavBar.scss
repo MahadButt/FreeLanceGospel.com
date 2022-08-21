@@ -1,0 +1,55 @@
+@import '../../shared/theme/app.scss';
+
+.NavBar{
+    margin-bottom: 150px;
+    .ui.menu{
+        margin: 0rem;
+        border-radius: 0px;
+        //background: transparent;
+        background: $navy-blue-color;
+
+        .item {
+            &.NavBar--menu-item {
+                color: white;
+                font-family: basker-regular;
+                font-size: 15px;
+                font-weight: 500;
+                &:hover {
+                    color: orange;
+                }
+            }
+            .login-btn {
+                color: white;
+                border-radius: 20px;
+                font-size: 15px;
+                &:hover {
+                    background: orange;
+                }
+            }
+        }
+    }
+
+    .NavBar--sidebar-icon{
+        margin-left: 10px !important;
+    }
+    .NavBar--logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: radial-gradient(circle, #FADBD8, #F1948A);
+    }
+    .notifications{
+        .ui.floating.label{
+            top: 2em;
+            left: 80%;
+        }
+        .bell-icon {
+            color: white;
+            cursor: pointer;
+            &:hover {
+                color: $orange-color;
+            }
+        }
+    }
+}
+

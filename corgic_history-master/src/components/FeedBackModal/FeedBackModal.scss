@@ -1,0 +1,72 @@
+@import '../../shared/theme/app.scss';
+.feedback-modal-container {
+	// width: 100%;
+	// max-width: 90%;
+	@include respond-at-max(480px) {
+		// max-width: 97%;
+	}
+	.modal-content {
+		// background-color: rgba(0,0,0, 0.8);
+		// border-radius: 10px;
+		// border: 0 !important;
+		// height: 90vh;
+		// overflow-y: auto;
+		// background: $light-color;
+	}
+	.feedback-wrapper {
+		position: relative;
+		// background: $light-color;
+		padding: 20px 10px 10px;
+        .times-icon {
+            position: absolute;
+            top:0;
+            right: 0;
+            color: gray;
+            z-index: 1;
+            transition: .2s;
+            &:hover {
+                color: $yellow-color;
+                cursor: pointer;
+            }
+            .icon {
+                font-size: 22px;
+            }
+        }
+        .title {
+            font-family: basker-bold;
+            text-align: center;
+            font-size: 18px;
+        }
+        .sub-title {
+            font-family: basker-regular;
+            text-align: center;
+            font-size: 13.5px;
+        }
+        .form-wrapper {
+            width: 90%;
+            margin: 10px auto 0;
+
+            .field-item {
+                margin: 5px 0;
+                .field-error {
+                    color: orangered;
+                    font-size: 13px;
+                }
+            }
+            .feedback-submit-btn {
+                margin: 15px 0 5px;
+                text-align: center;
+                .ui.button {
+                    background-color: $yellow-color;
+                    color: black;
+                    font-family: basker-bold;
+                    transition: 0.3s;
+                    &:hover {
+                        background-color: $purple-color;
+                        color: white;
+                    }
+                }
+            }
+        }
+	}
+}

@@ -1,0 +1,109 @@
+@import '../../shared/theme/app.scss';
+.InviteIcon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ui.modal,
+.ui.active.modal {
+    background: $light-color;
+  margin: 0 auto!important;
+  top: 10 !important;
+  left: auto !important;
+  transform-origin: center !important;
+  transition: all ease .5s;
+  overflow: auto;
+}
+.invite_container {
+	background: $light-color;
+	.invite_header {
+        padding:30px 20px 0px;
+        text-align: center;
+            .title {
+                font-family: basker-bold;
+                font-size: 20px;
+                @include respond-at-max(480px) {
+                    font-size: 16px;
+                }
+            }
+            .custom-border {
+                border-bottom: 3px solid $orange-color;
+                width: 130px;
+                margin: 6px auto 0;
+                @include respond-at-max(480px) {
+                    width: 100px;
+                }
+                
+            }
+        .sub-title {
+            text-align: center;
+            margin: 15px 0px 25px;
+            font-family: basker-regular;
+            font-size: 13px;
+            @include respond-at-max(480px) {
+                font-size: 10px;
+            }
+        }
+    }
+}
+    .invite-buttons-wrapper {
+        width: 90%;
+        margin: 0 auto 0;
+        padding: 20px 20px 25px;
+        background: white;
+        border-radius: 5px;
+        -moz-box-shadow: 0px 0px 10px 2px #ccc;
+        -webkit-box-shadow: 0px 0px 10px 2px #ccc;
+        box-shadow: 0px 0px 10px 2px #ccc;
+        @include respond-at-max(1024px) {
+            width: 80%;
+        }
+        @include respond-at-max(768px) {
+            width: 100%;
+        }
+        @include respond-at-max(480px) {
+            width: 98%;
+        }
+        .invite-item-email {
+            background-color: #23a6d6;
+            padding: 0 15px;
+            text-align: center;
+            margin:5px 0;
+            border-radius: 30px;
+        }
+        .invite-item-facebook {
+            background-color: #3b5998;
+            padding: 0 15px;
+            text-align: center;
+            margin:5px 0;
+            border-radius: 30px;
+        }
+        .invite-item-twitter {
+            background-color: #28a0cd;
+            padding: 0 15px;
+            text-align: center;
+            margin:5px 0;
+            border-radius: 30px;
+        }
+        .invite-item-whatsapp {
+            background-color: #009688;
+            padding: 0 15px;
+            text-align: center;
+            margin:5px 0;
+            border-radius: 30px;
+        }
+}
+.CopyContainer{
+    padding: 0px 50px;
+    margin-top: 20px;
+    @media only screen and (max-width: 720px){
+        padding: 0px 0px;
+    }
+   .ui.action.input button{
+       color:white;
+    background-color: #28a0cd;
+    }
+    .ui.action.input button:hover{
+        background-color: #1788b1;
+        }
+}

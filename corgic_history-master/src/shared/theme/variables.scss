@@ -1,0 +1,26 @@
+// Colors
+$orange-color: #d78402;
+$blue-color: #2185d0;
+$navy-blue-color: #23094a;
+$light-color: #F5F5F5;
+$yellow-color: #f6a704;
+$purple-color: #802dd8;
+
+// Media Queries
+
+@mixin respond-at-max($media) {
+  @media only screen and (max-width: $media) {@content;}  
+}
+@mixin respond-at-min($media) {
+  @media only screen and (min-width: $media) {@content;}  
+}
+@mixin respond-at($media) {
+  @media only screen and (width: $media) {@content;}  
+}
+
+@mixin title-custom-border() {
+    width: 130px;
+    height: 4px;
+    margin: 5px auto 5px;
+    background: $orange-color;
+}

@@ -1,0 +1,94 @@
+@import '../../../shared/theme/app.scss';
+.new-footer-wrapper {
+	//margin-top: 50px;	
+	background: $navy-blue-color;
+	color: white;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	.email-wrapper {
+		@media screen and (max-width: 480px) { 
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+        }
+		.label {
+			font-size: 16px;
+			font-family: basker-regular;
+		}
+		.email {
+			font-size: 13px;
+			font-family: basker-regular;
+			margin-top: 15px;
+			color: lightgray;
+			&:hover {
+				color: $orange-color;
+			}
+		}
+	}
+	.links-wrapper {
+		@media screen and (max-width: 480px) { 
+           display: flex;
+           flex-direction: column;
+           margin: 50px 0px;
+           justify-content: center;
+           align-items: center;
+        }
+		.label {
+			font-size: 16px;
+			font-family: basker-regular;
+		}
+		.links {
+			margin-top: 10px;
+			a {
+				text-decoration: none;
+			}
+			.link-item {
+				margin: 3px 0px;
+				color: lightgray;
+				font-size: 13.5px;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				font-family: basker-regular;
+
+				&:hover {
+					cursor: pointer;
+					color: $orange-color;
+				}
+				.icon {
+					margin-right: 8px;
+				}
+				.link {
+					margin-top: 5px;
+					letter-spacing: 0.5px;
+				}
+			}
+		}
+	}
+	.social-icons-wrapper {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		.label {
+			font-size: 16px;
+			font-family: basker-regular;
+		}
+		.social-icons {
+			margin-top: 10px;
+			@media screen and (max-width: 480px) { 
+	        }
+			.icon {
+				margin: 0 7px;
+				&:hover {
+					color: $orange-color;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}

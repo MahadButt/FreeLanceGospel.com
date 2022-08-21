@@ -1,0 +1,12 @@
+.search-component-container {
+	.form-container {
+		input {
+			width: 170px;
+			transition: width .7s ease;
+			&:focus {
+				//width: 400px;
+				width: 250px;
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+@import '../../shared/theme/app.scss';
+.custom-pagination-container {
+	// width: 100%;
+	overflow-x: auto;
+	.total {
+		font-family: basker-italic;
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+	.ui.pagination.menu {
+		.item {
+			&:hover {
+				background-color: lighten($yellow-color, 20%);
+			}
+		}
+		.active.item {
+			background-color: $yellow-color;
+			font-weight: 600 !important;
+		}
+	}
+	.pagination {
+		.page-item {
+			&.disabled {
+				cursor: not-allowed !important;
+			}
+			.page-link {
+			}
+			/*&:focus {
+				outline: none;
+			}*/
+		}
+	}
+}
